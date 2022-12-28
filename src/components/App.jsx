@@ -1,4 +1,4 @@
-import { ImageGellery, SearchBar } from '../components/index';
+import { ImageGellery, SearchBar } from './components/index';
 import styled from 'styled-components';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -10,7 +10,7 @@ const Container = styled.div`
   position: relative;
 `;
 export const notify = message => toast.error(message);
-export const App = () => {
+const App = () => {
   const [query, setQuery] = useState('');
 
   const pictureQuery = query => {
@@ -24,3 +24,4 @@ export const App = () => {
     </Container>
   );
 };
+export default App;
