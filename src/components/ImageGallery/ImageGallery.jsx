@@ -49,7 +49,7 @@ const ImageGallery = ({ query }) => {
   };
 
   const closeModal = () => {
-    setShowModal(true);
+    setShowModal(false);
   };
 
   return (
@@ -82,7 +82,7 @@ const ImageGallery = ({ query }) => {
       {showModal && (
         <Modal
           pictures={pictures}
-          closeModal={closeModal}
+          closeModalWindow={closeModal}
           modalImageId={modalImageId}
         ></Modal>
       )}
